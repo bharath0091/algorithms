@@ -11,7 +11,15 @@ public class Main {
     }
     public static void main(String[] args) {
 
+        // Test cases for Quicksort
+        int[] array1 = {3, 6, 8, 10, 1, 2, 1};
+        Quicksort quicksort = new Quicksort();
+        quicksort.quicksort(array1);
+        System.out.println(Arrays.toString(array1)); // Output: [1, 1, 2, 3, 6, 8, 10]
 
+        int[] array2 = {5, 3, 7, 6, 2, 1, 4};
+        quicksort.quicksort(array2);
+        System.out.println(Arrays.toString(array2)); // Output: [1, 2, 3, 4, 5, 6, 7]
 
 //ArrayDeque
         List<String> list = new ArrayList<>();
